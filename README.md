@@ -1,4 +1,5 @@
 # AR_demo
+Es el demo de la aplicacion AR
 # a-frame.js
 https://aframe.io/
 
