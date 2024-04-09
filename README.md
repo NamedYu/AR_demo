@@ -13,7 +13,7 @@ para correr el server.js, debería instalar las librerias con npm
 
 > node i https
 # archivos importantes
-> server.js 3D.html logo3.patt scene.bin tren.gltf
+> server.js; 3D.html; logo3.patt; scene.bin; tren.gltf;
 # a-frame.js
 > https://aframe.io/
 
