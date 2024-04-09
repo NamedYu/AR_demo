@@ -1,15 +1,31 @@
 const express = require('express');
+const cors = require('cors');
+const fs = require("fs");
+const https = require("https");
 const app = express();
+const port = 4000;
 
-// 将视频文件和 HTML 文件所在的文件夹设置为静态文件夹
-app.use(express.static(__dirname));
+const llavePrivada = fs.readFileSync("private.key");
+const certificado = fs.readFileSync("certificate.crt");
 
-// 定义根路由，返回 index.html
+app.use(express.static(__dirname)); 
+
+app.use(express.json());
+app.use(cors());
+
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/3D.html');
+  res.sendFile(__dirname + '/3D.html'); 
 });
 
-// 启动服务器，监听 3000 端口
-app.listen(3000, () => {
-  console.log('Server is running on http://localhost:3000');
+const credenciales = {
+    key: llavePrivada,
+    cert: certificado,
+    passphrase: "123456" // Contraseña de la llave privada utilizada en la creación del certificado
+};
+
+const httpsServer = https.createServer(credenciales, app);
+httpsServer.listen(port, () => {
+    console.log('Servidor HTTPS escuchando en el puerto:', port);
+}).on('error', err => {
+    console.log('Error al iniciar el servidor:', err);
 });
