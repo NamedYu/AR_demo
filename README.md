@@ -7,11 +7,6 @@ para correr el server.js, debería instalar las librerias con npm
 
 > node server.js
 
-> node i cors
-
-> node i fs
-
-> node i https
 # archivos importantes
 > server.js; 3D.html; logo3.patt; scene.bin; tren.gltf;
 # a-frame.js
