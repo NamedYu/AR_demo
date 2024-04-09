@@ -9,6 +9,9 @@ para correr el server.js, debería instalar las librerias con npm
 
 # archivos importantes
 > server.js; 3D.html; logo3.patt; scene.bin; tren.gltf;
+# Empezar
+Para correr el codigo, necesitas usar
+> node server.js
 # a-frame.js
 > https://aframe.io/
 
