@@ -1,6 +1,6 @@
 # AR_demo
 Es el demo de la aplicacion AR. Para la aplicación AR, necesita un server http o https para que se puede visitar los recursos.
-para correr el server.js, debería instalar la librería > express
+para correr el server.js, debería instalar las librerias con npm
 > npm i express
 
 > npm i node
