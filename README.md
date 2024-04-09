@@ -7,6 +7,11 @@ para correr el server.js, debería instalar la librería > express
 
 > node server.js
 
+> node i cors
+
+> node i fs
+
+> node i https
 # a-frame.js
 > https://aframe.io/
 
