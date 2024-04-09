@@ -1,4 +1,4 @@
-# AR_demo
+# 3DAR
 Es el demo de la aplicacion AR. Para la aplicación AR, necesita un server http o https para que se puede visitar los recursos.
 para correr el server.js, debería instalar las librerias con npm
 > npm i express
